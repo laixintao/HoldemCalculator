@@ -1,20 +1,7 @@
-div.board{
-	margin: 100px;
-	border-style: double;
-	float: left;
+.board{
+	margin: 50px;
 }
 
-div.flop1{
-	float: left;
-}
-
-div.flop2{
-	float: left;
-}
-
-div.flop3{
-	float: left;
-}
 
 #board{
 	text-align: center;
