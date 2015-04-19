@@ -1,9 +1,51 @@
 ﻿
-.board{
-	margin: 50px;
+
+h1{
+	font: "Microsoft YaHei",SimHei ;
+	font-size: 22px;
+	text-align: center;
+	color: #4a3113;
 }
 
+body{
+	background-color:#feeeed;
+}
 
-#board{
-	text-align: center;
+#board,#player1,#result{
+	margin: 5px auto 5px;
+	padding: 20px;
+	border: groove;
+}
+
+#player1{
+	
+}
+
+#page{
+	width: 1000px;
+	margin: 10px auto 10px;
+}
+
+#flop {
+	width: 60%;
+	float: left;
+}
+
+#turn{
+	width: 20%;
+	float: left;
+}
+
+#river{
+	width: 20%;
+	float: left;
+}
+
+.null{
+	clear: both;
+}
+
+.card{
+	width: 33.3%;
+	float: left;
 }

@@ -4,190 +4,212 @@
 "http://www.w3c.org/TR/xhtml/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html"; charset="utf-8" />
-<title>德州扑克概率计算器</title>
-</head>
+	<meta http-equiv="Content-Type" content="text/html"; charset="utf-8" />
+	<title>德州扑克概率计算器</title>
+	<link rel="stylesheet" type="text/css" href="style.css"></head>
 
 <body>
-	<div class="board">
-		<h2 id="board">台面</h2>
-		<div class="flop">
-		<div class="flop1">
-		<h3>翻牌</h3>
-		<form>
-			<select name="flod1color">
-			<option value="a">♠</option>
-			<option value="b">♥</option>
-			<option value="c">♣</option>
-			<option value="d">♦</option>
-			</select>
-		</form>
-		<form>
-			<select name="flod1value">
-			<option value="1">A</option>
-			<option value="2">2</option>
-			<option value="3">3</option>
-			<option value="4">4</option>
-			<option value="5">5</option>
-			<option value="6">6</option>
-			<option value="7">7</option>
-			<option value="8">8</option>
-			<option value="9">9</option>
-			<option value="10">10</option>
-			<option value="11">J</option>
-			<option value="12">Q</option>
-			<option value="13">K</option>
-			</select>
-		</form>
-		<form>
-			<select name="flod2color">
-			<option value="a">♠</option>
-			<option value="b">♥</option>
-			<option value="c">♣</option>
-			<option value="d">♦</option>
-			</select>
-		</form>
-		<form>
-			<select name="flod2value">
-			<option value="1">A</option>
-			<option value="2">2</option>
-			<option value="3">3</option>
-			<option value="4">4</option>
-			<option value="5">5</option>
-			<option value="6">6</option>
-			<option value="7">7</option>
-			<option value="8">8</option>
-			<option value="9">9</option>
-			<option value="10">10</option>
-			<option value="11">J</option>
-			<option value="12">Q</option>
-			<option value="13">K</option>
-			</select>
-		</form>
-		<form>
-			<select name="flod3color">
-			<option value="a">♠</option>
-			<option value="b">♥</option>
-			<option value="c">♣</option>
-			<option value="d">♦</option>
-			</select>
-		</form>
-		<form>
-			<select name="flod3value">
-			<option value="1">A</option>
-			<option value="2">2</option>
-			<option value="3">3</option>
-			<option value="4">4</option>
-			<option value="5">5</option>
-			<option value="6">6</option>
-			<option value="7">7</option>
-			<option value="8">8</option>
-			<option value="9">9</option>
-			<option value="10">10</option>
-			<option value="11">J</option>
-			<option value="12">Q</option>
-			<option value="13">K</option>
-			</select>
-		</form>
-		</div> <!--flop1-->
+	<div id="page">
+		<div id="board">
+			<h1 id="board_title">台面</h1>
 
-		<div class="flop2">
-		<h3>转牌</h3>
-		<form>
-			<select name="turncolor">
-			<option value="a">♠</option>
-			<option value="b">♥</option>
-			<option value="c">♣</option>
-			<option value="d">♦</option>
-			</select>
-		</form>
-		<form>
-			<select name="turnvalue">
-			<option value="1">A</option>
-			<option value="2">2</option>
-			<option value="3">3</option>
-			<option value="4">4</option>
-			<option value="5">5</option>
-			<option value="6">6</option>
-			<option value="7">7</option>
-			<option value="8">8</option>
-			<option value="9">9</option>
-			<option value="10">10</option>
-			<option value="11">J</option>
-			<option value="12">Q</option>
-			<option value="13">K</option>
-			</select>
-		</form>
-		</div> <!--flop2-->
+			<div id="flop">
 
-		<div class="flop3">
-		<h3>河牌</h3>
-		<form>
-			<select name="rivercolor">
-			<option value="a">♠</option>
-			<option value="b">♥</option>
-			<option value="c">♣</option>
-			<option value="d">♦</option>
-			</select>
-		</form>
-		<form>
-			<select name="rivervalue">
-			<option value="1">A</option>
-			<option value="2">2</option>
-			<option value="3">3</option>
-			<option value="4">4</option>
-			<option value="5">5</option>
-			<option value="6">6</option>
-			<option value="7">7</option>
-			<option value="8">8</option>
-			<option value="9">9</option>
-			<option value="10">10</option>
-			<option value="11">J</option>
-			<option value="12">Q</option>
-			<option value="13">K</option>
-			</select>
-		</form>
-		</div> <!--flop3-->
+				<div id="flop1">
+					<h3>翻牌</h3>
+					<div class="card">
+						<form>
+							<select name="flod1color">
+								<option value="a">♠</option>
+								<option value="b">♥</option>
+								<option value="c">♣</option>
+								<option value="d">♦</option>
+							</select>
+						</form>
+						<form>
+							<select name="flod1value">
+								<option value="1">A</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+								<option value="6">6</option>
+								<option value="7">7</option>
+								<option value="8">8</option>
+								<option value="9">9</option>
+								<option value="10">10</option>
+								<option value="11">J</option>
+								<option value="12">Q</option>
+								<option value="13">K</option>
+							</select>
+						</form>
+					</div>
+				</div>
+				<!--flop1-->
 
-		</div><!--flop-->
-	</div> <!--board-->
+				<div id="flop2">
+					<div class="card">
+						<form>
+							<select name="flod2color">
+								<option value="a">♠</option>
+								<option value="b">♥</option>
+								<option value="c">♣</option>
+								<option value="d">♦</option>
+							</select>
+						</form>
+						<form>
+							<select name="flod2value">
+								<option value="1">A</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+								<option value="6">6</option>
+								<option value="7">7</option>
+								<option value="8">8</option>
+								<option value="9">9</option>
+								<option value="10">10</option>
+								<option value="11">J</option>
+								<option value="12">Q</option>
+								<option value="13">K</option>
+							</select>
+						</form>
+					</div>
+				</div>
 
-	<div class="player1">
-	<h3>
-		玩家1底牌
-	</h3>
-		<form>
-			<select name="player1color">
-			<option value="a">♠</option>
-			<option value="b">♥</option>
-			<option value="c">♣</option>
-			<option value="d">♦</option>
-			</select>
-		</form>
-		<form>
-			<select name="player1value">
-			<option value="1">A</option>
-			<option value="2">2</option>
-			<option value="3">3</option>
-			<option value="4">4</option>
-			<option value="5">5</option>
-			<option value="6">6</option>
-			<option value="7">7</option>
-			<option value="8">8</option>
-			<option value="9">9</option>
-			<option value="10">10</option>
-			<option value="11">J</option>
-			<option value="12">Q</option>
-			<option value="13">K</option>
-			</select>
-		</form>
+				<div id="flop3">
+					<div class="card">
+						<form>
+							<select name="flod3color">
+								<option value="a">♠</option>
+								<option value="b">♥</option>
+								<option value="c">♣</option>
+								<option value="d">♦</option>
+							</select>
+						</form>
+						<form>
+							<select name="flod3value">
+								<option value="1">A</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+								<option value="6">6</option>
+								<option value="7">7</option>
+								<option value="8">8</option>
+								<option value="9">9</option>
+								<option value="10">10</option>
+								<option value="11">J</option>
+								<option value="12">Q</option>
+								<option value="13">K</option>
+							</select>
+						</form>
+					</div>
+				</div>
+				<!--flop3-->
+
+			</div>
+			<!--flop-->
+
+			<div id="turn">
+				<h3>转牌</h3>
+				<form>
+					<select name="turncolor">
+						<option value="a">♠</option>
+						<option value="b">♥</option>
+						<option value="c">♣</option>
+						<option value="d">♦</option>
+					</select>
+				</form>
+				<form>
+					<select name="turnvalue">
+						<option value="1">A</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+						<option value="7">7</option>
+						<option value="8">8</option>
+						<option value="9">9</option>
+						<option value="10">10</option>
+						<option value="11">J</option>
+						<option value="12">Q</option>
+						<option value="13">K</option>
+					</select>
+				</form>
+			</div>
+			<!--turn-->
+
+			<div id="river">
+				<h3>河牌</h3>
+				<form>
+					<select name="rivercolor">
+						<option value="a">♠</option>
+						<option value="b">♥</option>
+						<option value="c">♣</option>
+						<option value="d">♦</option>
+					</select>
+				</form>
+				<form>
+					<select name="rivervalue">
+						<option value="1">A</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+						<option value="7">7</option>
+						<option value="8">8</option>
+						<option value="9">9</option>
+						<option value="10">10</option>
+						<option value="11">J</option>
+						<option value="12">Q</option>
+						<option value="13">K</option>
+					</select>
+				</form>
+			</div>
+			<!--river-->
+			<div class="null"></div>
+		</div>
+		<!--board-->
+
+		<div id="player1">
+			<h1>玩家1底牌</h1>
+			<form>
+				<select name="player1color">
+					<option value="a">♠</option>
+					<option value="b">♥</option>
+					<option value="c">♣</option>
+					<option value="d">♦</option>
+				</select>
+			</form>
+			<form>
+				<select name="player1value">
+					<option value="1">A</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+					<option value="11">J</option>
+					<option value="12">Q</option>
+					<option value="13">K</option>
+				</select>
+			</form>
+		</div>
+
+		<div id="result">
+			<h1>计算结果</h1>
+			<button>计算</button>
+			<p>概率。。。。</p>
+		</div>
+		<!--result-->
 	</div>
-	<div id="result">
-	<button> 计算 </button>
-		<h3>
-			计算结果：
-		</h3>
-		<p>概率。。。。</p>
-	</div>
+	<!--page-->
 </body>
 </html>
