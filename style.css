@@ -45,7 +45,16 @@ body{
 	clear: both;
 }
 
-.card{
+#flop .card{
 	width: 33.3%;
 	float: left;
+}
+
+#player1 .card{
+	float: left;
+	width: 50%;
+}
+
+.card{
+	margin-top: 3px;
 }
