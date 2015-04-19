@@ -47,7 +47,16 @@ $(function(){
 			colors[i] = color;
 			i++;
 		});
-		
+		var RoyalStraightFlush;
+		var StraightFlush;
+		var Four;
+		var FullHouse;
+		var Flush;
+		var Straight;
+		var House;
+		var TwoPair;
+		var Pair;
+		var high;
 	});
 
 });
