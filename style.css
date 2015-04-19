@@ -2,9 +2,11 @@
 
 h1{
 	font: "Microsoft YaHei",SimHei ;
-	font-size: 22px;
-	text-align: center;
+	font-size: 30px;
 	color: #4a3113;
+	margin: 10px;
+	padding: 0;
+	margin-top: 0;
 }
 
 body{
@@ -57,4 +59,8 @@ body{
 
 .card{
 	margin-top: 3px;
+}
+
+select{
+	margin: 3px;
 }

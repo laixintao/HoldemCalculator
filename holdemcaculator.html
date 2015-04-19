@@ -7,7 +7,8 @@
 	<meta http-equiv="Content-Type" content="text/html"; charset="utf-8" />
 	<title>德州扑克概率计算器</title>
 	<link rel="stylesheet" type="text/css" href="style.css"></head>
-
+	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+	<script type="text/javascript" src="process.js"></script>
 <body>
 	<div id="page">
 		<div id="board">
@@ -18,8 +19,9 @@
 				<div id="flop1">
 					<h3>翻牌</h3>
 					<div class="card">
+					<img src="poker/a1.jpg" width="60px" hight="32px"/>
 						<form>
-							<select name="flod1color">
+							<select class="color" name="flod1color">
 								<option value="a">♠</option>
 								<option value="b">♥</option>
 								<option value="c">♣</option>
@@ -27,7 +29,7 @@
 							</select>
 						</form>
 						<form>
-							<select name="flod1value">
+							<select class="value"  name="flod1value">
 								<option value="1">A</option>
 								<option value="2">2</option>
 								<option value="3">3</option>
@@ -49,8 +51,9 @@
 
 				<div id="flop2">
 					<div class="card">
+					<img src="poker/a1.jpg" width="60px" hight="32px"/>
 						<form>
-							<select name="flod2color">
+							<select class="color" name="flod2color">
 								<option value="a">♠</option>
 								<option value="b">♥</option>
 								<option value="c">♣</option>
@@ -58,7 +61,7 @@
 							</select>
 						</form>
 						<form>
-							<select name="flod2value">
+							<select class="value"  name="flod2value">
 								<option value="1">A</option>
 								<option value="2">2</option>
 								<option value="3">3</option>
@@ -79,8 +82,9 @@
 
 				<div id="flop3">
 					<div class="card">
+					<img src="poker/a1.jpg" width="60px" hight="32px"/>
 						<form>
-							<select name="flod3color">
+							<select class="color"  name="flod3color">
 								<option value="a">♠</option>
 								<option value="b">♥</option>
 								<option value="c">♣</option>
@@ -88,7 +92,7 @@
 							</select>
 						</form>
 						<form>
-							<select name="flod3value">
+							<select class="value"  name="flod3value">
 								<option value="1">A</option>
 								<option value="2">2</option>
 								<option value="3">3</option>
@@ -114,8 +118,9 @@
 			<div id="turn">
 				<h3>转牌</h3>
 				<div class="card">
+				<img src="poker/a1.jpg" width="60px" hight="32px"/>
 				<form>
-					<select name="turncolor">
+					<select class="color"  name="turncolor">
 						<option value="a">♠</option>
 						<option value="b">♥</option>
 						<option value="c">♣</option>
@@ -123,7 +128,7 @@
 					</select>
 				</form>
 				<form>
-					<select name="turnvalue">
+					<select class="value"  name="turnvalue">
 						<option value="1">A</option>
 						<option value="2">2</option>
 						<option value="3">3</option>
@@ -146,8 +151,9 @@
 			<div id="river">
 				<h3>河牌</h3>
 				<div class="card">
+				<img src="poker/a1.jpg" width="60px" hight="32px"/>
 				<form>
-					<select name="rivercolor">
+					<select class="color"  name="rivercolor">
 						<option value="a">♠</option>
 						<option value="b">♥</option>
 						<option value="c">♣</option>
@@ -155,7 +161,7 @@
 					</select>
 				</form>
 				<form>
-					<select name="rivervalue">
+					<select class="value"  name="rivervalue">
 						<option value="1">A</option>
 						<option value="2">2</option>
 						<option value="3">3</option>
@@ -181,8 +187,9 @@
 		<div id="player1">
 			<h1>玩家1底牌</h1>
 			<div class="card">
+			<img src="poker/a1.jpg" width="60px" hight="32px"/>
 			<form>
-				<select name="p1c1c">
+				<select class="color" name="p1c1c">
 					<option value="a">♠</option>
 					<option value="b">♥</option>
 					<option value="c">♣</option>
@@ -190,7 +197,7 @@
 				</select>
 			</form>
 			<form>
-				<select name="p1c1v">
+				<select class="value"  name="p1c1v">
 					<option value="1">A</option>
 					<option value="2">2</option>
 					<option value="3">3</option>
@@ -208,8 +215,9 @@
 			</form>
 		</div>
 		<div class="card">
+		<img src="poker/a1.jpg" width="60px" hight="32px"/>
 			<form>
-				<select name="p1c2c">
+				<select class="color" name="p1c2c">
 					<option value="a">♠</option>
 					<option value="b">♥</option>
 					<option value="c">♣</option>
@@ -217,7 +225,7 @@
 				</select>
 			</form>
 			<form>
-				<select name="p1c2v">
+				<select class="value" name="p1c2v">
 					<option value="1">A</option>
 					<option value="2">2</option>
 					<option value="3">3</option>
@@ -240,7 +248,7 @@
 		<div id="result">
 			<h1>计算结果</h1>
 			<button>计算</button>
-			<p>概率。。。。</p>
+			<p>TODO 结果将显示在这里。</p>
 		</div>
 		<!--result-->
 	</div>
